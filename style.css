@@ -1,0 +1,77 @@
+*,
+*::after,
+*::before{
+	box-sizing: border-box;
+}
+body{
+	background-color: rgb(41, 41, 41);
+}
+.overlay.active{
+	opacity: 0.4;
+	visibility: visible;
+}
+.modal-window.active{
+	opacity: 1;
+	visibility: visible;
+}
+.overlay{
+	opacity: 0;
+	visibility: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background: rgba(111, 111, 111, 0.305);
+	cursor: pointer;
+}
+.modal-window{
+	opacity: 0;
+	visibility: hidden;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+	height: 350px;
+	transform: translate(-50%, -50%);
+	z-index: 10;
+	border-radius: 3px;
+	box-shadow: 0.3px 0 1px rgb(0, 0, 0);
+	background: rgba(64, 95, 206, 0.502);
+}
+.X{
+	width: 20px;
+	position: absolute;
+	left: 95%;
+	cursor: pointer;
+}
+.modal_window__message{
+	position: fixed;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.btn{
+	position: fixed;
+	left: 50%;
+	transform: translate(-50%);
+	width: 100px;
+	height: 50px;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	background-color: rgb(64, 95, 206);
+}
+@media (max-width: 410px) {
+	.modal-window{
+		width: 300px;
+		height: 250px;
+	}
+	.X{
+		width: 20px;
+		position: absolute;
+		left: 93%;
+		cursor: pointer;
+	}
+}
