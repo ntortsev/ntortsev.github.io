@@ -46,6 +46,10 @@ body{
 	left: 95%;
 	cursor: pointer;
 }
+.X:hover{
+	background-color: #fff;
+	transition: 1s;
+}
 .modal_window__message{
 	position: fixed;
 	top: 45%;
@@ -62,6 +66,14 @@ body{
 	border-radius: 3px;
 	cursor: pointer;
 	background-color: rgb(64, 95, 206);
+	transition: all 1s ease;
+}
+.btn:hover{
+	color: rgb(255, 255, 255);
+	background-color: rgb(51, 84, 206);
+}
+.btn:hover:before{
+	transition: all 1s ease;
 }
 @media (max-width: 410px) {
 	.modal-window{
